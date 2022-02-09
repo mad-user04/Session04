@@ -1,0 +1,95 @@
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#332973"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".SignInScreen"
+    tools:deviceIds="wear">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/circle_obsud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/orange_circle" />
+
+        <ImageView
+            android:id="@+id/obsud_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="45dp"
+            android:src="@drawable/obsud" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/circle_obsud"
+            android:layout_marginStart="30dp"
+            android:text="Обсуждения"
+            android:textColor="#FFFF"
+            android:textSize="9dp" />
+
+        <ImageView
+            android:id="@+id/circle_rec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@+id/circle_obsud"
+            android:src="@drawable/orange_circle" />
+
+        <ImageView
+            android:id="@+id/rec_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="45dp"
+            android:layout_toEndOf="@+id/circle_obsud"
+            android:src="@drawable/rec" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/circle_rec"
+            android:layout_marginStart="104dp"
+            android:text="Рекомендации"
+            android:textColor="#FFFF"
+            android:textSize="9dp" />
+
+        <ImageView
+            android:id="@+id/circle_best"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/circle_obsud"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/orange_circle" />
+        <ImageView
+            android:id="@+id/izbr_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="117dp"
+            android:src="@drawable/izbr" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/circle_best"
+            android:layout_marginStart="35dp"
+            android:text="Избранное"
+            android:textColor="#FFFF"
+            android:textSize="9dp" />
+
+
+    </RelativeLayout>
+
+</androidx.wear.widget.BoxInsetLayout>

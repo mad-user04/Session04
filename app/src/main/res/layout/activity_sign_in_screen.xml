@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#332973"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".SignInScreen"
+    tools:deviceIds="wear">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="174dp">
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/logo_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/main_logo" />
+
+            <TextView
+                android:id="@+id/email_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo_main"
+
+                android:layout_toStartOf="@+id/logo_main"
+                android:text="E-mail"
+                android:textColor="#EF3A01"
+                android:textSize="10dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_ti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email_tv"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="20dp"
+                android:hint="you@example.com"
+                android:textColorHint="#6B6B6B"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/password_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email_ti"
+                android:layout_marginStart="40dp"
+                android:text="Пароль"
+                android:textColor="#EF3A01"
+                android:textSize="10dp" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_ti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/password_tv"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:hint="Ваш пароль"
+                android:textColorHint="#6B6B6B"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/enter_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/password_ti"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="#EF3A01"
+                android:onClick="login"
+                android:text="войти"
+                android:textSize="12dp" />
+
+
+        </RelativeLayout>
+</androidx.wear.widget.BoxInsetLayout>

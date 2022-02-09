@@ -1,0 +1,117 @@
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#332973"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".SignInScreen"
+    tools:deviceIds="wear">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:text="Обсуждения"
+            android:textColor="#EF3A01" />
+
+        <TextView
+            android:id="@+id/obsud_film1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lucifer"
+            android:textColor="#FFF"
+            android:layout_marginTop="75dp"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:id="@+id/obsud_film2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/obsud_film1"
+            android:text="The Witcher"
+            android:textColor="#FFF"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:id="@+id/obsud_film3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/obsud_film2"
+            android:text="LOST"
+            android:textColor="#FFF"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:id="@+id/obsud_film4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/obsud_film3"
+            android:text="The Magicans"
+            android:textColor="#FFF"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="32dp"/>
+        <TextView
+            android:id="@+id/obsud1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:textColor="#EF3A01"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="165dp"/>
+        <TextView
+            android:id="@+id/obsud2"
+            android:layout_below="@+id/obsud1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textColor="#EF3A01"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="165dp"/>
+        <TextView
+            android:id="@+id/obsud3"
+            android:layout_below="@+id/obsud2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textColor="#EF3A01"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="165dp"/>
+
+        <ImageView
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/line_obsud" />
+
+        <ImageView
+            android:id="@+id/line2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line1"
+            android:layout_marginTop="-73dp"
+            android:src="@drawable/line_obsud" />
+
+        <ImageView
+            android:id="@+id/line3"
+            android:layout_below="@+id/line2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/line_obsud" />
+        <ImageView
+            android:id="@+id/line4"
+            android:layout_below="@+id/line3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/line_obsud" />
+
+
+    </RelativeLayout>
+</androidx.wear.widget.BoxInsetLayout>
+
